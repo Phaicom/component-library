@@ -32,19 +32,19 @@
     "vue": "^3.1.5"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.2.5",
-    "@vue/compiler-sfc": "^3.1.5",
-    "eslint": "^7.31.0",
+    "@vitejs/plugin-vue": "^1.10.1",
+    "@vue/compiler-sfc": "^3.2.23",
+    "eslint": "^8.3.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-vue": "^7.14.0",
-    "prettier": "^2.3.2",
+    "eslint-plugin-vue": "^8.1.1",
+    "prettier": "^2.5.0",
     "rollup-plugin-visualizer": "^5.5.2",
-    "vite": "^2.4.3",
-    "vitepress": "^0.15.6"
+    "vite": "^2.6.14",
+    "vitepress": "^0.20.1"
   },
   "dependencies": {
     "mitt": "^3.0.0",
-    "tabbable": "^5.2.0",
-    "tippy.js": "^6.3.1"
+    "tabbable": "^5.2.1",
+    "tippy.js": "^6.3.7"
   }
 }
