@@ -12,10 +12,11 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "noUnusedLocals": true,
+    "allowJs": true,
     "paths": {
       "@/*": ["src/*"],
       "#/*": ["types/*"]
-    }
+    },
   },
   "include": [
     "src/**/*.ts",
@@ -27,5 +28,5 @@
     ".vitepress/**/*.d.ts",
     ".vitepress/**/*.vue",
     "vite.config.ts"
-  ]
+   ]
 }
