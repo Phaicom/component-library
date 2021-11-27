@@ -16,7 +16,7 @@ export default defineConfig({
     vue(),
     WindiCSS(),
     ViteRestart({
-      restart: '.vitepress/config.js',
+      restart: '.vitepress/config/*.*',
     }),
   ],
   build: {
