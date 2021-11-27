@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import vue from '@vitejs/plugin-vue'
+// import vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
 import WindiCSS from 'vite-plugin-windicss'
 import ViteRestart from 'vite-plugin-restart'
@@ -13,7 +13,7 @@ export default defineConfig({
     },
   },
   plugins: [
-    vue(),
+    // vue(),
     WindiCSS(),
     ViteRestart({
       restart: '.vitepress/config/*.*',

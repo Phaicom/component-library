@@ -2,7 +2,7 @@
   <Progress :value="progress" max="1" />
 </template>
 <script>
-import { Progress } from '../../../src/index'
+import { Progress } from '@'
 
 let randomProgressGenerator
 

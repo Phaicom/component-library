@@ -5,11 +5,11 @@
   </div>
   <div style="margin-bottom: 16px">
     <p>Example with label - {{ labelText }}</p>
-    <Input label="Example text" v-model="labelText" />
+    <Input v-model="labelText" label="Example text" />
   </div>
   <div style="margin-bottom: 16px">
     <p>Example with placeholder - {{ placeholderLabelText }}</p>
-    <Input placeholder="Write something here" v-model="placeholderLabelText" />
+    <Input v-model="placeholderLabelText" placeholder="Write something here" />
   </div>
   <div style="margin-bottom: 16px">
     <p>Example without label - {{ noLabelText }}</p>
@@ -17,19 +17,20 @@
   </div>
   <div style="margin-bottom: 16px">
     <p>Example with required - {{ requiredText }}</p>
-    <Input label="I am required" v-model="requiredText" required />
+    <Input v-model="requiredText" label="I am required" required />
   </div>
   <div style="margin-bottom: 16px">
     <p>Disabled</p>
-    <Input label="Oh :(" disabled />
+    <Input :label="'Oh :('" disabled />
   </div>
   <div style="margin-bottom: 16px">
     <p>Disabled with a label</p>
-    <Input label="Oh :(" modelValue="Hello" disabled />
+    <Input :label="'Oh :('" model-value="Hello" disabled />
   </div>
 </template>
+
 <script>
-import { Input } from '../../../src/index'
+import { Input } from '@'
 
 export default {
   name: 'InputExample',

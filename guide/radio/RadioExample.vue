@@ -14,7 +14,7 @@
   </div>
 </template>
 <script>
-import { Radio } from '../../../src/index'
+import { Radio } from '@'
 
 export default {
   name: 'RadioExample',

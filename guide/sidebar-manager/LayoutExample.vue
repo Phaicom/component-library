@@ -20,7 +20,7 @@
   </div>
 </template>
 <script>
-import { Button } from '../../../src/index'
+import { Button } from '@'
 
 export default {
   components: {

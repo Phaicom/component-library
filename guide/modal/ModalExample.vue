@@ -2,7 +2,9 @@
   <Button label="Open modal" @click="openModal()" />
   <Modal :is-open="isOpen" @close="closeModal()">
     <div class="o-Modal__example">
-      <h1 style="margin: 0px">Modal example</h1>
+      <h1 style="margin: 0px">
+        Modal example
+      </h1>
       <p>
         You can see that your TAB focus is trapped here. Upon closing, TAB focus
         will go back to the previously focused element.
@@ -23,7 +25,7 @@
   </Modal>
 </template>
 <script>
-import { Button, Modal } from '../../../src/index'
+import { Button, Modal } from '@'
 
 export default {
   name: 'ButtonExample',

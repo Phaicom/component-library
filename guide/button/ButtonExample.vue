@@ -15,12 +15,12 @@
   <span class="text-red-500">hello</span>
 </template>
 <script>
-  import { Button } from '../../../src/index';
+import { Button } from '@'
 
-  export default {
-    name: 'ButtonExample',
-    components: {
-      Button,
-    },
-  };
+export default {
+  name: 'ButtonExample',
+  components: {
+    Button,
+  },
+}
 </script>

@@ -1,6 +1,8 @@
 <template>
   <div class="o-Modal__example">
-    <h1 style="margin: 0px">Modal example</h1>
+    <h1 style="margin: 0px">
+      Modal example
+    </h1>
     <p>
       You can see that your TAB focus is trapped here. Upon closing, TAB focus
       will go back to the previously focused element.
@@ -20,7 +22,7 @@
   </div>
 </template>
 <script>
-import { Button } from '../../../src/index'
+import { Button } from '@'
 
 export default {
   components: {
