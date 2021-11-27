@@ -77,8 +77,8 @@ export default {
   computed: {
     textareaClassObject() {
       const hasText = this.text !== '' && this.text !== undefined
-      const hasPlaceholder =
-        this.placeholder !== '' && this.placeholder !== undefined
+      const hasPlaceholder
+        = this.placeholder !== '' && this.placeholder !== undefined
 
       return {
         'has-value': hasText || hasPlaceholder,
@@ -95,9 +95,8 @@ export default {
       this.text = newModelValue
     },
     text(newValue) {
-      if (this.autogrow) {
+      if (this.autogrow)
         this.$el.dataset.replicatedText = newValue
-      }
 
       this.$emit('update:modelValue', newValue)
     },

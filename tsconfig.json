@@ -1,44 +1,31 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "ESNext",
-    "target": "ESNext",
-    "lib": ["DOM", "ESNext"],
-    "strict": true,
-    "esModuleInterop": true,
-    "incremental": false,
-    "skipLibCheck": true,
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "webworker"],
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "strict": true,
     "strictNullChecks": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "noUnusedParameters": true,
-    "sourceMap": true,
-    "strictFunctionTypes": false,
-    "noImplicitAny": false,
-    "allowJs": true,
-    "typeRoots": ["./node_modules/@types/"],
-    "types": ["vite/client"],
+    "strictFunctionTypes": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
     "paths": {
       "@/*": ["src/*"],
       "#/*": ["types/*"]
     }
   },
   "include": [
-    "tests/**/*.ts",
     "src/**/*.ts",
     "src/**/*.d.ts",
-    "src/**/*.tsx",
     "src/**/*.vue",
     "types/**/*.d.ts",
     "types/**/*.ts",
-    "build/**/*.ts",
-    "build/**/*.d.ts",
-    "mock/**/*.ts",
+    ".vitepress/**/*.ts",
+    ".vitepress/**/*.d.ts",
+    ".vitepress/**/*.vue",
     "vite.config.ts"
-  ],
-  "exclude": ["dist", "node_modules", "**/*.js"]
+  ]
 }

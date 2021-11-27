@@ -11,7 +11,7 @@
       :aria-label="label"
       :placeholder="placeholder"
       @input="text = $event.target.value"
-    />
+    >
     <span
       class="c-Input__label"
       :title="label"
@@ -65,8 +65,8 @@ export default {
   computed: {
     inputClassObject() {
       const hasText = this.text !== '' && this.text !== undefined
-      const hasPlaceholder =
-        this.placeholder !== '' && this.placeholder !== undefined
+      const hasPlaceholder
+        = this.placeholder !== '' && this.placeholder !== undefined
 
       return {
         'has-value': hasText || hasPlaceholder,

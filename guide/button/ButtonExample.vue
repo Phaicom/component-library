@@ -11,14 +11,16 @@
   <div>
     <Button label="Disabled" type="text" disabled />
   </div>
+
+  <span class="text-red-500">hello</span>
 </template>
 <script>
-import { Button } from '../../../src/index'
+  import { Button } from '../../../src/index';
 
-export default {
-  name: 'ButtonExample',
-  components: {
-    Button,
-  },
-}
+  export default {
+    name: 'ButtonExample',
+    components: {
+      Button,
+    },
+  };
 </script>

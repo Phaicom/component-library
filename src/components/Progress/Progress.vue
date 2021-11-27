@@ -31,9 +31,8 @@ export default {
       const value = Number(this.value)
       const max = Number(this.max)
 
-      if (Number.isNaN(value) || Number.isNaN(max)) {
+      if (Number.isNaN(value) || Number.isNaN(max))
         return 0
-      }
 
       return Math.round((value / max) * 100)
     },

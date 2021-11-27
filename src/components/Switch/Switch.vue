@@ -13,7 +13,7 @@
       type="checkbox"
       :disabled="disabled"
       @click="onTrigger()"
-    />
+    >
     <div class="c-Switch__slider" />
     <span v-if="label" class="c-Switch__label">
       {{ label }}
@@ -50,7 +50,7 @@ export default {
     switchAttributes() {
       return {
         'aria-disabled': this.disabled,
-        tabindex: this.disabled ? undefined : '0',
+        'tabindex': this.disabled ? undefined : '0',
       }
     },
   },

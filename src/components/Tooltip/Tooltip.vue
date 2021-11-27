@@ -1,6 +1,6 @@
 <template>
   <div class="c-Tooltip" tabindex="0">
-    <slot></slot>
+    <slot />
   </div>
 </template>
 <script>

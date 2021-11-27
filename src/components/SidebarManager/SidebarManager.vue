@@ -34,9 +34,8 @@ export default {
       this.component = null
     },
     handleKeyup(e) {
-      if (e.keyCode === ESCAPE_KEY) {
+      if (e.keyCode === ESCAPE_KEY)
         this.handleClose()
-      }
     },
   },
 }

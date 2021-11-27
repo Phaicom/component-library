@@ -15,8 +15,8 @@
         :name="name"
         :value="item.value"
         :disabled="disabled"
-      />
-      <div class="c-Radio__element"></div>
+      >
+      <div class="c-Radio__element" />
       <span v-if="item.label" class="c-Radio__label">
         {{ item.label }}
       </span>
@@ -65,7 +65,7 @@ export default {
     radioAttributes() {
       return {
         'aria-disabled': this.disabled,
-        tabindex: this.disabled ? undefined : '0',
+        'tabindex': this.disabled ? undefined : '0',
       }
     },
   },

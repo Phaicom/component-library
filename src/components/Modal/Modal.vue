@@ -30,8 +30,8 @@
   </teleport>
 </template>
 <script>
-import { lockScroll, unlockScroll } from '../../index'
 import { tabbable } from 'tabbable'
+import { lockScroll, unlockScroll } from '../../index'
 
 const ESCAPE_KEY = 27
 const TAB_KEY = 9
@@ -102,16 +102,16 @@ export default {
         }
 
         const firstFocusableElement = focusableElements[0]
-        const lastFocusableElement =
-          focusableElements[focusableElements.length - 1]
+        const lastFocusableElement
+          = focusableElements[focusableElements.length - 1]
 
         /**
          * If the current focus is the first focusable element and the user wants to go back
          * then let's focus on the last element
          */
         if (
-          event.shiftKey &&
-          document.activeElement === firstFocusableElement
+          event.shiftKey
+          && document.activeElement === firstFocusableElement
         ) {
           event.preventDefault()
           lastFocusableElement.focus()
@@ -122,8 +122,8 @@ export default {
          * on the first
          */
         if (
-          !event.shiftKey &&
-          document.activeElement === lastFocusableElement
+          !event.shiftKey
+          && document.activeElement === lastFocusableElement
         ) {
           event.preventDefault()
           firstFocusableElement.focus()

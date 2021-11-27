@@ -1,22 +1,28 @@
 import { resolve } from 'path'
-import { visualizer } from 'rollup-plugin-visualizer'
 import vue from '@vitejs/plugin-vue'
-
 import { defineConfig } from 'vite'
+import WindiCSS from 'vite-plugin-windicss'
+import ViteRestart from 'vite-plugin-restart'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@/': `${resolve(__dirname, 'src')}/`,
+      '#/': `${resolve(__dirname, 'types')}/`,
+    },
+  },
   plugins: [
     vue(),
-    visualizer({
-      open: true,
-      title: 'Moon Bundle Visualizer',
+    WindiCSS(),
+    ViteRestart({
+      restart: '.vitepress/config.js',
     }),
   ],
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.js'),
-      name: 'moon',
+      entry: resolve(__dirname, 'src/index.ts'),
+      name: 'zrch',
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
@@ -28,7 +34,13 @@ export default defineConfig({
         globals: {
           vue: 'Vue',
         },
+        manualChunks: {
+          windicss: ['windicss'],
+        },
       },
     },
+  },
+  optimizeDeps: {
+    include: ['windicss/utils/style', 'windicss'],
   },
 })

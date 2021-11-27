@@ -73,8 +73,8 @@ const lockScrollMobile = () => {
 }
 
 const unlockScrollMobile = () => {
-  const supportsNativeSmoothScroll =
-    'scrollBehavior' in document.documentElement.style
+  const supportsNativeSmoothScroll
+    = 'scrollBehavior' in document.documentElement.style
   const $html = document.documentElement
   const $body = document.body
 
@@ -107,17 +107,15 @@ const unlockScrollMobile = () => {
 }
 
 const lockScroll = () => {
-  if (isMobileOS()) {
+  if (isMobileOS())
     lockScrollMobile()
-  }
 
   lockScrollPC()
 }
 
 const unlockScroll = () => {
-  if (isMobileOS()) {
+  if (isMobileOS())
     unlockScrollMobile()
-  }
 
   unlockScrollPC()
 }

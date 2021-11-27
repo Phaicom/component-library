@@ -13,8 +13,8 @@
       :disabled="disabled"
       :checked="state"
       @change="state = $event.target.checked"
-    />
-    <div class="c-Checkbox__element"></div>
+    >
+    <div class="c-Checkbox__element" />
     <span v-if="label" class="c-Checkbox__label">
       {{ label }}
     </span>
@@ -50,7 +50,7 @@ export default {
     checkboxAttributes() {
       return {
         'aria-disabled': this.disabled,
-        tabindex: this.disabled ? undefined : '0',
+        'tabindex': this.disabled ? undefined : '0',
       }
     },
   },

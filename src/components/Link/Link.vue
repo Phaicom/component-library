@@ -43,20 +43,19 @@ export default {
   computed: {
     linkAttributes() {
       return {
-        title: this.title ? this.title : this.label,
-        href: this.disabled ? undefined : this.href,
-        rel: this.openOnNewTab ? 'noopener noreferrer' : undefined,
-        target: this.openOnNewTab ? '_blank' : undefined,
+        'title': this.title ? this.title : this.label,
+        'href': this.disabled ? undefined : this.href,
+        'rel': this.openOnNewTab ? 'noopener noreferrer' : undefined,
+        'target': this.openOnNewTab ? '_blank' : undefined,
         'aria-disabled': this.disabled,
-        tabindex: this.disabled ? undefined : '0',
+        'tabindex': this.disabled ? undefined : '0',
       }
     },
   },
   methods: {
     onClick() {
-      if (!this.disabled) {
+      if (!this.disabled)
         this.$emit('click')
-      }
     },
   },
 }
