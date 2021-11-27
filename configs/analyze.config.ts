@@ -1,4 +1,5 @@
 import { resolve } from 'path'
+import { visualizer } from 'rollup-plugin-visualizer'
 import vue from '@vitejs/plugin-vue'
 import WindiCSS from 'vite-plugin-windicss'
 
@@ -15,10 +16,14 @@ export default defineConfig({
   plugins: [
     vue(),
     WindiCSS(),
+    visualizer({
+      open: true,
+      title: 'Zrch Bundle Visualizer',
+    }),
   ],
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
+      entry: resolve(__dirname, '../src/index.ts'),
       name: 'zrch',
     },
     rollupOptions: {

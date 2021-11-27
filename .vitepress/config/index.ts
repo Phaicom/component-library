@@ -4,7 +4,7 @@ import { DefaultTheme } from '#/config'
 
 const config: UserConfig<DefaultTheme.Config> = {
   lang: 'en-US',
-  title: '🌙 Moon',
+  title: 'Zrch',
   description: 'A lightweight Vue 3 component library',
   themeConfig,
   srcExclude: ['README.md'],
