@@ -1,6 +1,6 @@
 {
   "name": "@phaicom/zrchcss",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A lightweight Vue 3 component library",
   "repository": "https://github.com/Phaicom/component-library.git",
   "author": "Reawpai Chunsoi <reawpai.chun@yahoo.com>",
@@ -16,7 +16,8 @@
       "import": "./dist/zrchcss.es.js",
       "require": "./dist/zrchcss.umd.js"
     },
-    "./dist/style.css": "./dist/style.css"
+    "./dist/style.css": "./dist/style.css",
+    "./src/windicss": "./src/windicss"
   },
   "unpkg": "./dist/zrchcss.umd.js",
   "jsdelivr": "./dist/zrchcss.umd.js",
