@@ -23,6 +23,7 @@ export const nav: DefaultTheme.Config['nav'] = [
     text: 'Utilities',
     items: [
       { text: 'Color', link: '/utilities/colors' },
+      { text: 'Responsive', link: '/utilities/responsive' },
     ],
   },
 ]

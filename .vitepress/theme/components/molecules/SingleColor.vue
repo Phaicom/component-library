@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { colors } from '@@/windicss'
+import { theme } from '@@/windicss/theme'
 
 const props = withDefaults(defineProps<{
   color: string
@@ -13,7 +13,7 @@ const camelize = (str: string) => str.replace(/[A-Z]/g, m => `-${m.toLowerCase()
 const level = computed(() => props.color.split(/-/).slice(-1)[0])
 const color = computed(() => props.color.split(/-/).slice(1, -1).join('-'))
 // @ts-ignore
-const hex = computed<string>(() => colors[camelize(color.value)]?.[+level.value])
+const hex = computed<string>(() => theme.colors[camelize(color.value)]?.[+level.value])
 </script>
 
 <template>

@@ -1,4 +1,4 @@
-import { colors } from './colors'
+import { colors } from './theme/colors'
 
 const camelize = (str: string) => str.replace(/[A-Z]/g, m => `-${m.toLowerCase()}`)
 

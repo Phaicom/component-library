@@ -1,3 +1,2 @@
-export { colors } from './colors'
-
-export { getColorSafelist } from './utils'
+export { theme } from './theme'
+export { safelist } from './safelist'

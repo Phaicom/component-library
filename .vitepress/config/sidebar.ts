@@ -9,6 +9,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     text: 'Utilities',
     children: [
       { text: 'Color', link: '/utilities/colors' },
+      { text: 'Responsive', link: '/utilities/responsive' },
     ],
   },
   {

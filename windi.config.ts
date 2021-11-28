@@ -1,6 +1,6 @@
 import { defineConfig } from 'windicss/helpers'
 import typography from 'windicss/plugin/typography'
-import { colors, getColorSafelist } from './src/windicss'
+import { theme, safelist } from './src/windicss'
 
 export default defineConfig({
   extract: {
@@ -15,19 +15,14 @@ export default defineConfig({
     'logo-float-xl',
     'dark:text-white',
     'opacity-85',
-    ...getColorSafelist(),
+    ...safelist,
   ],
   shortcuts: {
     'logo-float-xl': 'text-6xl m-2 mr-6 float-right',
   },
   theme: {
     extend: {
-      screens: {
-        '2xl': '1400px',
-      },
-      colors: {
-        ...colors,
-      },
+      ...theme,
     },
     typography: {
       DEFAULT: {
