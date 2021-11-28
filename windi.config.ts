@@ -5,8 +5,6 @@ export default defineConfig({
   extract: {
     include: [
       'src/**/*.{ts,vue}',
-      '.vitepress/theme/**/*.{ts,vue}',
-      'guide/**/*.{ts,vue}',
     ],
   },
   safelist: [
