@@ -56,7 +56,7 @@
   </div>
 </template>
 <script>
-import { Textarea } from '@'
+import { Textarea } from '@@'
 
 export default {
   name: 'SwitchExample',

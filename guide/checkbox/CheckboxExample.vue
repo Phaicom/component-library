@@ -15,7 +15,7 @@
   </div>
 </template>
 <script>
-import { Checkbox } from '@'
+import { Checkbox } from '@@'
 
 export default {
   name: 'CheckboxExample',

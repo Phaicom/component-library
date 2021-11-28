@@ -22,7 +22,7 @@
   </div>
 </template>
 <script>
-import { Button } from '@'
+import { Button } from '@@'
 
 export default {
   components: {

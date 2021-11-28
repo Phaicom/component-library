@@ -49,7 +49,7 @@
   </Sidebar>
 </template>
 <script>
-import { Button, Sidebar } from '@'
+import { Button, Sidebar } from '@@'
 
 export default {
   name: 'SidebarExample',

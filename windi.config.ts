@@ -10,11 +10,33 @@ export default defineConfig({
       'guide/**/*.{ts,vue}',
     ],
   },
+  safelist: [
+    'pb-5',
+    'logo-float-xl',
+    'dark:text-white',
+    'opacity-85',
+  ],
 
   theme: {
     extend: {
+      screens: {
+        '2xl': '1400px',
+      },
       colors: {
         ...colors,
+        primary: {
+          DEFAULT: '#6CC4C8',
+          50: '#F2FAFA',
+          100: '#E3F4F4',
+          200: '#C5E8E9',
+          300: '#A7DCDE',
+          400: '#8AD0D3',
+          500: '#6CC4C8',
+          600: '#45B2B7',
+          700: '#358B8E',
+          800: '#266366',
+          900: '#173B3D',
+        },
       },
     },
     typography: {

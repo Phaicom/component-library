@@ -25,7 +25,7 @@
   </Modal>
 </template>
 <script>
-import { Button, Modal } from '@'
+import { Button, Modal } from '@@'
 
 export default {
   name: 'ButtonExample',

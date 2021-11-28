@@ -3,7 +3,7 @@
   <Link label="Example link" disabled />
 </template>
 <script>
-import { Link } from '@'
+import { Link } from '@@'
 
 export default {
   name: 'LinkExample',

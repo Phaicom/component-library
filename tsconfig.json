@@ -13,8 +13,10 @@
     "skipLibCheck": true,
     "noUnusedLocals": true,
     "allowJs": true,
+    "typeRoots": ["./node_modules/@types/", "./types"],
     "paths": {
-      "@/*": ["src/*"],
+      "@@/*": ["src/*"],
+      "@/*": [".vitepress/theme/*"],
       "#/*": ["types/*"]
     },
   },
@@ -27,6 +29,7 @@
     ".vitepress/**/*.ts",
     ".vitepress/**/*.d.ts",
     ".vitepress/**/*.vue",
-    "vite.config.ts"
+    "vite.config.ts",
+    "components.d.ts"
    ]
 }

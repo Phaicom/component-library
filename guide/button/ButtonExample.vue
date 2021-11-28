@@ -15,7 +15,7 @@
   <span class="text-red-500">hello</span>
 </template>
 <script>
-import { Button } from '@'
+import { Button } from '@@'
 
 export default {
   name: 'ButtonExample',

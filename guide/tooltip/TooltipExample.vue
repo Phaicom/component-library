@@ -4,7 +4,7 @@
   </Tooltip>
 </template>
 <script>
-import { Tooltip } from '@'
+import { Tooltip } from '@@'
 
 export default {
   name: 'TooltipExample',

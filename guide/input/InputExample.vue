@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { Input } from '@'
+import { Input } from '@@'
 
 export default {
   name: 'InputExample',
