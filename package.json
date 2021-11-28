@@ -1,5 +1,5 @@
 {
-  "name": "@phaicom/zrch",
+  "name": "@phaicom/zrchcss",
   "version": "0.0.1",
   "description": "A lightweight Vue 3 component library",
   "repository": "https://github.com/Phaicom/component-library.git",
@@ -8,16 +8,16 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/zrch.umd.js",
-  "module": "./dist/zrch.es.js",
+  "main": "./dist/zrchcss.umd.js",
+  "module": "./dist/zrchcss.es.js",
   "exports": {
     ".": {
-      "import": "./dist/zrch.es.js",
-      "require": "./dist/zrch.umd.js"
+      "import": "./dist/zrchcss.es.js",
+      "require": "./dist/zrchcss.umd.js"
     }
   },
-  "unpkg": "./dist/zrch.umd.js",
-  "jsdelivr": "./dist/zrch.umd.js",
+  "unpkg": "./dist/zrchcss.umd.js",
+  "jsdelivr": "./dist/zrchcss.umd.js",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vue-tsc --noEmit && vitepress build",
