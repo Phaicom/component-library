@@ -1,5 +1,6 @@
 import { defineConfig } from 'windicss/helpers'
 import typography from 'windicss/plugin/typography'
+import { colors, getColorSafelist } from './src/windicss'
 
 export default defineConfig({
   extract: {
@@ -14,6 +15,7 @@ export default defineConfig({
     'logo-float-xl',
     'dark:text-white',
     'opacity-85',
+    ...getColorSafelist(),
   ],
   shortcuts: {
     'logo-float-xl': 'text-6xl m-2 mr-6 float-right',
@@ -24,19 +26,7 @@ export default defineConfig({
         '2xl': '1400px',
       },
       colors: {
-        primary: {
-          DEFAULT: '#6CC4C8',
-          50: '#F2FAFA',
-          100: '#E3F4F4',
-          200: '#C5E8E9',
-          300: '#A7DCDE',
-          400: '#8AD0D3',
-          500: '#6CC4C8',
-          600: '#45B2B7',
-          700: '#358B8E',
-          800: '#266366',
-          900: '#173B3D',
-        },
+        ...colors,
       },
     },
     typography: {

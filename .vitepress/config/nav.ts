@@ -19,4 +19,10 @@ export const nav: DefaultTheme.Config['nav'] = [
       { text: 'Tooltip', link: '/guide/tooltip/tooltip' },
     ],
   },
+  {
+    text: 'Utilities',
+    items: [
+      { text: 'Color', link: '/utilities/colors' },
+    ],
+  },
 ]

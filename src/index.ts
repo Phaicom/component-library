@@ -15,3 +15,5 @@ export { default as Tooltip } from './components/Tooltip/Tooltip.vue'
 export { default as EVENTS } from './utils/events'
 export { default as EventBus } from './utils/mitt'
 export { lockScroll, unlockScroll } from './utils/scrollLock'
+
+export { colors, getColorSafelist } from './windicss'

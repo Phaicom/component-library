@@ -23,4 +23,10 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
       { text: 'Tooltip', link: '/guide/tooltip/tooltip' },
     ],
   },
+  {
+    text: 'Utilities',
+    children: [
+      { text: 'Color', link: '/utilities/colors' },
+    ],
+  },
 ]
