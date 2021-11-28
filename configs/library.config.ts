@@ -37,4 +37,5 @@ export default defineConfig({
   optimizeDeps: {
     include: ['windicss/utils/style', 'windicss'],
   },
+  publicDir: false,
 })

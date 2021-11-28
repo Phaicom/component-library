@@ -22,9 +22,11 @@ export default defineConfig({
     }),
   ],
   build: {
+    target: 'esnext',
     lib: {
       entry: resolve(__dirname, '../src/index.ts'),
       name: 'zrchcss',
+      formats: ['es', 'umd', 'iife'],
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
@@ -42,4 +44,5 @@ export default defineConfig({
   optimizeDeps: {
     include: ['windicss/utils/style', 'windicss'],
   },
+  publicDir: false,
 })

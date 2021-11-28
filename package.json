@@ -1,11 +1,12 @@
 {
   "name": "@phaicom/zrchcss",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A lightweight Vue 3 component library",
   "repository": "https://github.com/Phaicom/component-library.git",
   "author": "Reawpai Chunsoi <reawpai.chun@yahoo.com>",
   "license": "MIT",
   "files": [
+    "src",
     "dist"
   ],
   "main": "./dist/zrchcss.umd.js",
@@ -18,6 +19,7 @@
   },
   "unpkg": "./dist/zrchcss.umd.js",
   "jsdelivr": "./dist/zrchcss.umd.js",
+  "types": "src/types/index.d.ts",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vue-tsc --noEmit && vitepress build",

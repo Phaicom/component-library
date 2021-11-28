@@ -3,15 +3,22 @@
     "baseUrl": ".",
     "target": "esnext",
     "module": "esnext",
-    "lib": ["ESNext", "DOM", "DOM.Iterable", "webworker"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "webworker","scripthost"],
     "moduleResolution": "node",
+    "jsx": "preserve",
     "esModuleInterop": true,
     "strict": true,
+    "declaration": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "noUnusedLocals": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "sourceMap": true,
     "allowJs": true,
     "typeRoots": ["./node_modules/@types/", "./types"],
     "paths": {
@@ -31,5 +38,6 @@
     ".vitepress/**/*.vue",
     "vite.config.ts",
     "components.d.ts"
-   ]
+   ],
+   "exclude": ["node_modules", "dist", "**/*.js"]
 }
