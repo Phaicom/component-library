@@ -19,6 +19,7 @@ declare module 'vue' {
     EditLink: typeof import('./.vitepress/theme/components/molecules/EditLink.vue')['default']
     'HeroiconsOutline:menuAlt2': typeof import('~icons/heroicons-outline/menu-alt2')['default']
     HomeHero: typeof import('./.vitepress/theme/components/organisms/HomeHero.vue')['default']
+    HomeNews: typeof import('./.vitepress/theme/components/molecules/HomeNews.vue')['default']
     IconButton: typeof import('./.vitepress/theme/components/atoms/IconButton.vue')['default']
     IonIosSunny: typeof import('~icons/ion/ios-sunny')['default']
     LastUpdated: typeof import('./.vitepress/theme/components/molecules/LastUpdated.vue')['default']
