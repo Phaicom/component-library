@@ -1,5 +1,4 @@
 import { defineConfig } from 'windicss/helpers'
-import colors from 'windicss/colors'
 import typography from 'windicss/plugin/typography'
 
 export default defineConfig({
@@ -16,14 +15,15 @@ export default defineConfig({
     'dark:text-white',
     'opacity-85',
   ],
-
+  shortcuts: {
+    'logo-float-xl': 'text-6xl m-2 mr-6 float-right',
+  },
   theme: {
     extend: {
       screens: {
         '2xl': '1400px',
       },
       colors: {
-        ...colors,
         primary: {
           DEFAULT: '#6CC4C8',
           50: '#F2FAFA',
@@ -45,7 +45,7 @@ export default defineConfig({
           maxWidth: 'none',
           color: 'inherit',
           a: {
-            color: '#48B0F1',
+            color: '#6CC4C8',
             textDecoration: 'none',
           },
           b: { color: 'inherit' },

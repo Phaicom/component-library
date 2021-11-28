@@ -1,6 +1,5 @@
 <template>
   <button
-    class="shadow-md"
     :class="buttonClassObject"
     type="button"
     :title="title"

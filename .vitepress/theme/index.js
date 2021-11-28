@@ -1,12 +1,12 @@
 import 'virtual:windi.css'
 
-import Layout from './Layout.vue'
-import NotFound from './NotFound.vue'
-
 import './style/vars.css'
 import './style/all.css'
 import './style/scrollbar.css'
 import './style/markdown.css'
+
+import Layout from './Layout.vue'
+import NotFound from './NotFound.vue'
 
 export default {
   Layout,

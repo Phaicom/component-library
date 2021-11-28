@@ -11,8 +11,6 @@
   <div>
     <Button label="Disabled" type="text" disabled />
   </div>
-
-  <span class="text-red-500">hello</span>
 </template>
 <script>
 import { Button } from '@@'

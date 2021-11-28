@@ -33,6 +33,8 @@
     "vue": "^3.2.23"
   },
   "dependencies": {
+    "@docsearch/css": "^3.0.0-alpha.41",
+    "@docsearch/js": "^3.0.0-alpha.41",
     "@vueuse/core": "^7.1.2",
     "json5": "^2.2.0",
     "lz-string": "^1.4.4",
@@ -45,18 +47,21 @@
     "windicss": "^3.2.1"
   },
   "devDependencies": {
+    "@docsearch/react": "^3.0.0-alpha.41",
     "@hannoeru/eslint-config": "^0.3.5",
     "@iconify/json": "^1.1.434",
     "@types/lz-string": "^1.3.34",
     "@types/markdown-it": "^12.2.3",
     "@types/node": "^16.11.10",
     "@types/prismjs": "^1.16.6",
+    "@types/resolve": "^1.20.1",
     "@vitejs/plugin-vue": "^1.10.1",
     "@vue/compiler-sfc": "^3.2.23",
     "esbuild-register": "^3.2.0",
     "eslint": "^7.32.0",
     "eslint-plugin-markdown": "^2.2.1",
     "markdown-it": "^12.2.0",
+    "resolve": "^1.20.0",
     "rollup-plugin-visualizer": "^5.5.2",
     "typescript": "^4.5.2",
     "unplugin-icons": "^0.12.20",

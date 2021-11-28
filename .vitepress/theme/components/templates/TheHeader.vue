@@ -10,7 +10,10 @@ const repo = useRepo()
       <div class="flex items-center lg:hidden">
         <ToggleSidebar />
       </div>
-      <div class="hidden lg:flex items-center flex-1">
+      <div class="flex items-center flex-1 lg:flex-none">
+        <AppLogo />
+      </div>
+      <div class="hidden lg:flex items-center ml-auto">
         <DropdownMenu />
       </div>
       <div class="flex items-center lg:space-x-3 lg:pl-3 xl:pl-6">

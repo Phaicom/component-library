@@ -6,4 +6,5 @@ export const metaData = {
   title: 'Zrch CSS',
   description: 'A lightweight Vue 3 component library.',
   site,
+  image: `${site}/assets/logo-dark.png`,
 }
