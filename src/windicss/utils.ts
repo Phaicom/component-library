@@ -1,5 +1,7 @@
 import { colors } from './colors'
 
+const camelize = (str: string) => str.replace(/[A-Z]/g, m => `-${m.toLowerCase()}`)
+
 export const getColorSafelist = () => {
   const types = [
     'bg',
@@ -12,7 +14,7 @@ export const getColorSafelist = () => {
     Object.keys((colors as { [key: string]: any })[color]).forEach((level) => {
       if (level !== 'DEFAULT') {
         types.forEach((type) => {
-          arr.push(`${type}-${color}-${level}`)
+          arr.push(`${type}-${camelize(color)}-${level}`)
         })
       }
     })

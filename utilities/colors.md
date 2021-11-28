@@ -2,30 +2,22 @@
 
 <ColorsPalette />
 
-## Customization 
+## Usage
 
-```ts windi.config.js
-export default {
-  theme: {
-    colors: {
-      // Configure your color palette here
-    },
-  },
-}
+<span class="text-primary-100 bg-secondary-variant-100">
+  I love banana
+</span>
+
+```vue
+<span class="text-primary-100 bg-secondary-variant-100">
+  I love banana
+</span>
 ```
 
-## Reuse Colors
+## Customization 
 
-All the colors from the palette are enabled by default. If you want to set alias or reuse some colors from the palette, you can import them from `windicss/colors` module.
-
-```ts windi.config.js
-import colors from 'windicss/colors'
-
-export default {
-  theme: {
-    colors: {
-      grey: colors.gray,
-    },
-  },
+```ts src/windicss/colors.ts
+export const colors = {
+  // Configure your color palette here
 }
 ```

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-// import colors from 'windicss/colors'
+import { colors } from '@@/windicss'
 
 const props = withDefaults(defineProps<{
   color: string
@@ -8,19 +8,12 @@ const props = withDefaults(defineProps<{
   color: '',
 })
 
-// function camelize(str: string) {
-//   const arr = str.split('-')
-//   const capital = arr.map((item, index) => index ? item.charAt(0).toUpperCase() + item.slice(1).toLowerCase() : item.toLowerCase())
-//   // ^-- change here.
-//   const capitalString = capital.join('')
-
-//   return capitalString
-// }
+const camelize = (str: string) => str.replace(/[A-Z]/g, m => `-${m.toLowerCase()}`)
 
 const level = computed(() => props.color.split(/-/).slice(-1)[0])
-// const color = computed(() => props.color.split(/-/).slice(1, -1).join('-'))
+const color = computed(() => props.color.split(/-/).slice(1, -1).join('-'))
 // @ts-ignore
-// const hex = computed<string>(() => colors[camelize(color.value)]?.[+level.value])
+const hex = computed<string>(() => colors[camelize(color.value)]?.[+level.value])
 </script>
 
 <template>
@@ -29,8 +22,8 @@ const level = computed(() => props.color.split(/-/).slice(-1)[0])
     <div class="font-bold text-sm">
       {{ level }}
     </div>
-    <!-- <div class="opacity-50 font-mono text-xs -mt-1">
+    <div class="opacity-50 font-mono text-xs -mt-1">
       {{ hex }}
-    </div> -->
+    </div>
   </div>
 </template>

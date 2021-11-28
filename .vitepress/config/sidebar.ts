@@ -6,6 +6,12 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     link: '/',
   },
   {
+    text: 'Utilities',
+    children: [
+      { text: 'Color', link: '/utilities/colors' },
+    ],
+  },
+  {
     text: 'Components',
     children: [
       { text: 'Button', link: '/guide/button/button' },
@@ -21,12 +27,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
       { text: 'Switch', link: '/guide/switch/switch' },
       { text: 'Textarea', link: '/guide/textarea/textarea' },
       { text: 'Tooltip', link: '/guide/tooltip/tooltip' },
-    ],
-  },
-  {
-    text: 'Utilities',
-    children: [
-      { text: 'Color', link: '/utilities/colors' },
     ],
   },
 ]
