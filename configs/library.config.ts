@@ -8,13 +8,14 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   resolve: {
     alias: {
-      '@/': `${resolve(__dirname, 'src')}/`,
-      '#/': `${resolve(__dirname, 'types')}/`,
+      '@@/': `${resolve(__dirname, '../src')}/`,
+      '@/': `${resolve(__dirname, '../.vitepress/theme')}/`,
+      '#/': `${resolve(__dirname, '../types')}/`,
     },
   },
   plugins: [
     vue(),
-    WindiCSS(),
+    WindiCSS({ config: resolve(__dirname, './windi.config.ts') }),
   ],
   build: {
     lib: {
