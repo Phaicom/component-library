@@ -53,5 +53,6 @@ export default defineConfig({
       'prismjs',
       'prismjs/components/prism-css',
     ],
+    exclude: ['vue-demi'],
   },
 })

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { theme } from '@@/windicss/theme'
+import { theme } from '../../../../windicss'
 
 const props = withDefaults(defineProps<{
   color: string

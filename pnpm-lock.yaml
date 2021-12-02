@@ -36,6 +36,7 @@ specifiers:
   vite-plugin-windicss: ^1.5.3
   vitepress: ^0.20.1
   vue-tsc: ^0.29.7
+  vue3-whr-ripple-directive: ^1.0.0
   windicss: ^3.2.1
   windicss-analysis: ^0.3.4
 
@@ -51,6 +52,7 @@ dependencies:
   splitpanes: 2.3.8
   tabbable: 5.2.1
   tippy.js: 6.3.7
+  vue3-whr-ripple-directive: 1.0.0
   windicss: 3.2.1
 
 devDependencies:
@@ -4199,6 +4201,10 @@ packages:
       '@vue/server-renderer': 3.2.23_vue@3.2.23
       '@vue/shared': 3.2.23
     dev: true
+
+  /vue3-whr-ripple-directive/1.0.0:
+    resolution: {integrity: sha512-0L2dPbZLIVferfymqxwgjMRaiVlo/XYfkF52BWhN9tdxzszfVSKfyXbqQf4lQmFot+5S5HclN4xs3WXUiSYpdA==}
+    dev: false
 
   /webpack-virtual-modules/0.4.3:
     resolution: {integrity: sha512-5NUqC2JquIL2pBAAo/VfBP6KuGkHIZQXW/lNKupLPfhViwh8wNsu0BObtl09yuKZszeEUfbXz8xhrHvSG16Nqw==}

@@ -6,8 +6,9 @@
   "author": "Reawpai Chunsoi <reawpai.chun@yahoo.com>",
   "license": "MIT",
   "files": [
-    "src",
-    "dist"
+    "windicss",
+    "dist",
+    "src"
   ],
   "main": "./dist/zrchcss.umd.js",
   "module": "./dist/zrchcss.es.js",
@@ -16,8 +17,8 @@
       "import": "./dist/zrchcss.es.js",
       "require": "./dist/zrchcss.umd.js"
     },
-    "./dist/style.css": "./dist/style.css",
-    "./src/windicss": "./src/windicss/index.ts"
+    "./style": "./dist/style.css",
+    "./windicss": "./windicss/index.ts"
   },
   "unpkg": "./dist/zrchcss.umd.js",
   "jsdelivr": "./dist/zrchcss.umd.js",
@@ -48,6 +49,7 @@
     "splitpanes": "^2.3.8",
     "tabbable": "^5.2.1",
     "tippy.js": "^6.3.7",
+    "vue3-whr-ripple-directive": "^1.0.0",
     "windicss": "^3.2.1"
   },
   "devDependencies": {

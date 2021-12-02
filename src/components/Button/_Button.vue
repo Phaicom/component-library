@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { computed, toRefs } from 'vue'
-import { Color, Size } from '@@/types/css'
-import { Ripple as vRipple } from '@@/directives'
-import { useColor } from '@@/hooks'
+import { Color, Size } from '@@/types'
 
 const props = defineProps({
   color: {
@@ -33,26 +31,14 @@ const props = defineProps({
     type: Object || null,
     default: null,
   },
-  iconColor: {
-    type: String || null,
-    default: null,
-  },
 })
 
 defineEmits<{
   (event: 'click', $event: any): void
 }>()
 
-const { getRGBAFromPalette, DEFAULT_RIPPLE_COLOR, DISABLED_RIPPLE_COLOR } = useColor()
-
 const rippleColor = computed(() => {
-  if (props.disabled)
-    return DISABLED_RIPPLE_COLOR
-
-  if (props.contained)
-    return DEFAULT_RIPPLE_COLOR
-
-  return getRGBAFromPalette(props.color)
+  return props.contained ? 'white' : props.color
 })
 
 const sizeClass = computed(() => {
@@ -78,7 +64,7 @@ const typeClass = computed(() => {
   classes.pop()
 
   if (disabled.value)
-    return ['btn-disabled', 'bg-white']
+    return ['btn-disabled']
 
   if (contained.value) {
     classes.push(`bg-${color.value}-100`, 'text-white')
@@ -102,15 +88,15 @@ const typeClass = computed(() => {
 </script>
 
 <template>
-  <button
-    v-ripple="rippleColor"
+  <Button
+    v-ripple="!disabled ? { class: `${rippleColor}--text` } : null"
     class="btn"
     :class="[...sizeClass, ...typeClass]"
     @click="$emit('click', $event)"
   >
-    <component :is="icon" v-if="icon" :style="{color: iconColor?iconColor:'inherit'}" :class="{'text-primary-100':!iconColor}" />
+    <component :is="icon" v-if="icon" />
     <span :class="{ 'mx-2': icon }">
       <slot />
     </span>
-  </button>
+  </Button>
 </template>

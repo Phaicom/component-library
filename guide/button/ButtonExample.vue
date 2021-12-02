@@ -1,24 +1,43 @@
+<script setup lang='ts'>
+import { Button } from '../../src'
+import ExampleIcon from '~icons/carbon/favorite'
+</script>
 <template>
-  <div style="margin-bottom: 16px">
-    <Button label="Default" />
+  <div class="mb-4">
+    <Button class="mr-4">
+      Default
+    </Button>
+    <Button selected>
+      Selected Default
+    </Button>
   </div>
-  <div style="margin-bottom: 16px">
-    <Button label="Outlined" type="outlined" />
+  <div class="mb-4">
+    <Button outlined class="mr-4">
+      Outlined
+    </Button>
+    <Button outlined selected>
+      Selected Outlined
+    </Button>
   </div>
-  <div style="margin-bottom: 16px">
-    <Button label="Text" type="text" />
+  <div class="mb-4">
+    <Button contained class="mr-4">
+      Contained
+    </Button>
+    <Button contained selected>
+      Selected Contained
+    </Button>
   </div>
-  <div>
-    <Button label="Disabled" type="text" disabled />
+  <div class="mb-4">
+    <Button disabled>
+      Disabled
+    </Button>
+  </div>
+  <div class="mb-4">
+    <Button outlined :icon="ExampleIcon" class="mr-4">
+      With Icon
+    </Button>
+    <Button outlined :icon="ExampleIcon" icon-color="red">
+      With Red Icon
+    </Button>
   </div>
 </template>
-<script>
-import { Button } from '@@'
-
-export default {
-  name: 'ButtonExample',
-  components: {
-    Button,
-  },
-}
-</script>

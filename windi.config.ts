@@ -1,6 +1,7 @@
 import { defineConfig } from 'windicss/helpers'
+import plugin from 'windicss/plugin'
 import typography from 'windicss/plugin/typography'
-import { theme, safelist } from './src/windicss'
+import { theme, safelist, shortcuts, utilities } from './windicss'
 
 export default defineConfig({
   extract: {
@@ -19,6 +20,7 @@ export default defineConfig({
   ],
   shortcuts: {
     'logo-float-xl': 'text-6xl m-2 mr-6 float-right',
+    ...shortcuts,
   },
   theme: {
     extend: {
@@ -51,5 +53,10 @@ export default defineConfig({
       },
     },
   },
-  plugins: [typography()],
+  plugins: [
+    typography(),
+    plugin(({ addUtilities }) => {
+      addUtilities({ ...utilities.borders, ...utilities.elevations })
+    }),
+  ],
 })
