@@ -1,4 +1,5 @@
 import 'virtual:windi.css'
+import './styles/global.css'
 
 export { default as Button } from './components/Button/Button.vue'
 // export { default as Checkbox } from './components/Checkbox/Checkbox.vue'
